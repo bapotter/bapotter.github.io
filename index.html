@@ -11,13 +11,108 @@
 <style>
 
 h1 {
-    color:red;
-};
+    color:#5307c6;
+    text-align:center;
+    font-size:130px;
+    text-shadow:4px 4px red;
+}
+h2 {
+    font-size:25px;
+    font-weight:bold;
+}
+
+body {
+    background-color:black;
+    border-style:double;
+    border-width: 90px;
+    border-radius:90px;
+    border-left-color:white;
+    border-top-color:red    ;
+    border-right-color:white;
+    border-bottom-color:blue;
+}
+
+.space-image {
+    background-image: url("galaxy.jpg");
+    background-color: #cccccc;
+    height:1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align:center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    text-align:center;
+}
+
+li {
+    
+    border-right:1px solid #bbb;
+    display:inline-block;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: rgb(216, 47, 18);
+}
+
+.active {
+    background-color: blue;
+}   
+
+.info {
+    display:inline-block;
+    width: 500px;
+    height: 200px;
+    border: 1px solid #333;
+    box-shadow: 6px 7px 5px #444;
+    text-align:center;
+    background-image: linear-gradient(180deg,rgb(223, 70, 70),white 50%, skyblue);
+    
+}
 
 </style>
 <body>
 
-    <h1>This is my portfolio website! :D</h1>
+<div class = "space-image">
     
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">Show Off</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li > <a href="#about">About Me</a></li>
+      </ul>
+    <div class ="space-text">
+
+        <h1>Welcome to my Portfolio!</h1>
+
+        <div class = "info">
+            <h2>The Basis</h2>
+            <p>The basis of this website is to showcase my talents as a web developer. For potential employers. So my home page is here to astound and catch my viewers' attention. </p>
+            <p>In this website I have a few other additions to this page such as an about me page, contact me page, and a show off page.  </p>
+        </div>
+
+    </div>
+
+
+</div>
 </body>
 </html>
